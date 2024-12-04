@@ -1,5 +1,5 @@
 package com.example.kotlindersleri.odevler
-
+//  1.Ödev assigment
 fun main() {
     val ilce = "Avcılar"
     val kıta = "Avrupa"
@@ -37,7 +37,7 @@ fun main() {
     val bilgisayarModeli = "MSI Gaming Gen Series"
     val ekranBoyutu = "15.0 - 15.6 inc"
     val kullanımSuresi = "2 Yıl"
-    val basınc = "5 Pa"
+    val basınc = 5.3
     val etkinlikGunu = "15 Nisan 2025"
     val odemeGunu = "13 Ocak 2025"
     val yolculukCıkısTarihi = "15 Haziran 2025"
@@ -50,7 +50,7 @@ fun main() {
     val faturaTarihi = "11/04/2021"
 
     println("--------------Bilgiler--------------")
-    println("İlçe: $ilce")
+    println("İlçe: $ilce.")
     println("Kıta: $kıta")
     println("Faks: $faks")
     println("Posta Kodu: $postaKodu")
