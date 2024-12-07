@@ -6,11 +6,11 @@ fun main() {
     // 2.Fonksiyon test
     maasHesap(30)
     // 3.Fonksiyon test
-    println(otoparkUcret(4))
+    println(otoparkUcret(1))
     // 4.Fonksiyon test
     println("${kmToMil(2.56)} Mil")
     // 5.Fonksiyon test
-    dikDortgenAlan(3.4,5.2)
+    println("Dikdortgenin alani ${dikDortgenAlan(3.4, 5.2)}")
     // 6.Fonksiyon test
     println(faktoryel(4))
     // 7.Fonksiyon test
@@ -45,10 +45,8 @@ fun maasHesap(gunSayısı: Int) {
 fun otoparkUcret(saat: Int): Int {
     val sabitUcret = 50
     val saatlikUcret = 10
-    if (sabitUcret > 1) {
+    if (saat > 0) {
         return (saat - 1) * saatlikUcret + sabitUcret
-    } else if (saat == 1) {
-        return sabitUcret
     } else {
         println("Gecersiz saat girdiniz!")
         return 0
@@ -61,8 +59,8 @@ fun kmToMil(birim: Double): Double {
 }
 
 // 5.Fonksiyon
-fun dikDortgenAlan(dikKenar: Double, yatayKenar: Double) {
-    println("Alan: ${dikKenar * yatayKenar}")
+fun dikDortgenAlan(dikKenar: Double, yatayKenar: Double): Double {
+    return dikKenar * yatayKenar
 }
 
 // 6.Fonksiyon
