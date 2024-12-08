@@ -2,7 +2,7 @@ package com.example.kotlindersleri.odevler
 
 fun main() {
     // 1.Fonksiyon test
-    println(kenarAcıHesapla(4))
+    println(kenarAciHesapla(4))
     // 2.Fonksiyon test
     maasHesap(30)
     // 3.Fonksiyon test
@@ -18,9 +18,9 @@ fun main() {
 }
 
 // 1.Fonksiyon
-fun kenarAcıHesapla(kenarSayısı: Int): Int {
-    if (kenarSayısı > 2) {
-        return ((kenarSayısı - 2) * 180) / kenarSayısı
+fun kenarAciHesapla(kenarSayisi: Int): Int {
+    if (kenarSayisi > 2) {
+        return ((kenarSayisi - 2) * 180) / kenarSayisi
     } else {
         println("Hatalı kenar sayısı girdiniz")
         return 0
@@ -28,9 +28,9 @@ fun kenarAcıHesapla(kenarSayısı: Int): Int {
 }
 
 // 2.Fonksiyon
-fun maasHesap(gunSayısı: Int) {
+fun maasHesap(gunSayisi: Int) {
 
-    val toplamSaat = gunSayısı * 8
+    val toplamSaat = gunSayisi * 8
     val normalUcret = 40
     val mesaiUcret = 80
 
@@ -64,11 +64,11 @@ fun dikDortgenAlan(dikKenar: Double, yatayKenar: Double): Double {
 }
 
 // 6.Fonksiyon
-fun faktoryel(sayı: Int): Int {
-    if (sayı > 1) {
-        return sayı * faktoryel(sayı - 1)
-    } else if (sayı == 1) {
-        return sayı
+fun faktoryel(sayi: Int): Int {
+    if (sayi > 1) {
+        return sayi * faktoryel(sayi - 1)
+    } else if (sayi == 1) {
+        return sayi
     } else {
         println("Gecersiz sayi girdiniz")
         return 0
@@ -77,11 +77,11 @@ fun faktoryel(sayı: Int): Int {
 
 // 7.Fonksiyon
 fun eHarfiHesapla(kelime: String) {
-    var eHarfiSayısı = 0
+    var eHarfiSayisi = 0
     for (c in kelime) {
         if (c == 'e') {
-            eHarfiSayısı++
+            eHarfiSayisi++
         }
     }
-    println("$kelime kelimesinde $eHarfiSayısı kere 'e' harfi geciyor")
+    println("$kelime kelimesinde $eHarfiSayisi kere 'e' harfi geciyor")
 }
